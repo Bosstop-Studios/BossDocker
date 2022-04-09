@@ -1,0 +1,39 @@
+{
+  "name": "bossdocker",
+  "version": "1.0.0",
+  "buildVersion": "1.0",
+  "description": "OpenSource Docker",
+  "main": "src/js/index.js",
+  "scripts": {
+    "start": "electron . --disable-software-rasterizer",
+    "build": "electron-builder",
+    "pack": "electron-builder build",
+    "dist:linux": "electron-builder --linux",
+    "dist:mac": "electron-builder --mac"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bosstop-Studios/BossDocker.git"
+  },
+  "keywords": [
+    "Docker",
+    "opensouce"
+  ],
+  "author": "SirBlob",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bosstop-Studios/BossDocker/issues"
+  },
+  "homepage": "https://github.com/Bosstop-Studios/BossDocker#readme",
+  "dependencies": {
+    "express": "^4.17.3",
+    "path": "^0.12.7",
+    "xterm": "^4.17.0",
+    "xterm-addon-fit": "^0.5.0"
+  },
+  "devDependencies": {
+    "electron": "^17.1.0",
+    "electron-builder": "^22.14.13",
+    "fs": "^0.0.1-security"
+  }
+}
